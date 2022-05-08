@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Image Notes</title>
-        <style>
-            #picture{
-                position:relative;
-                width:500px;}
-            #picture img{width: 1000px;
-                        margin:0;
-                    padding:0;}
-                #note1{position:absolute;
-                border:2px solid hotpink;
-            width:100px;height: 100px;
-        top: 100px;
-        left:200px;text-align:right;
-    color:black}
-        </style>
-    </head>
-    <body>
-        <h1>Image</h1>
-        <div id="picture">
-            <img src="image.jpg">
-            <div id="note1">Rocket</div>
-        </div>
-    </body>
+
+<head>
+    <title>Image Notes</title>
+    <style>
+        #picture {
+            position: relative;
+            width: 500px;
+        }
+
+        #picture img {
+            width: 500px;
+            margin: 0;
+            padding: 0;
+        }
+        #picture:hover #note1{
+            display:block;
+        }
+
+        #note1 {
+            position: absolute;
+            border: 2px solid hotpink;
+            width: 100px;
+            height: 100px;
+            top: 100px;
+            left: 200px;
+            text-align: right;
+            color: black;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Image</h1>
+    <div id="picture">
+        <img src="image.jpg">
+        <div id="note1">Rocket</div>
+    </div>
+</body>
+
 </html>

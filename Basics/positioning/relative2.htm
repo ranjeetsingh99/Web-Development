@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Position</title>
+    <style type="text/css">
+        .offset {
+            border: 3px solid blue;
+            padding: 10px;
+            margin: 10px;
+            background-color: #777777;
+            position: relative;
+            top: -0px;
+            left: 10px;
+            width: 33%;
+        }
+        .positioned{
+            position:relative;
+            left:50px;
+        }
+        span {
+            background-color: white;
+            border:1px solid black;
+        }
+        #inner{
+            position: relative;
+            left:25px;
+            top:10px;
+        }
+        #outer{
+            position: relative;
+            top:10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="positioned">
+    <p>In addition to typing URLs directly into your browser to go to a particular page,you also URLs
+        when you create a hypertext link within a document to another document. So, any way you look at it, URLs are
+        important to how you and your browser get around on t use he Web.</p>
+    <p class="offset">
+        In addition to typing URLs directly into your browser to go to a particular page,you also URLs
+        when you create a hypertext link within a document to another document. So, any way you look at it, URLs are
+        important to how you and your browser get around on t use he Web.
+    </p>
+    <p>In addition to typing URLs directly into your browser to go to a particular page,you also URLs
+        when you create a hypertext link within a document to another document. So, any way you look at it, URLs are
+        important to how you and your browser get around on t use he Web.</p>
+    </div>
+    
+    <p>In addition to typing <span id="outer">URLs <span id="inner">directly</span> </span> into your browser to go to a particular page,you also URLs
+        when you create a hypertext link within a document to another document. So, any way you look at it, URLs are
+        important to how you and your browser get around on t use he Web.</p>
+    </body>
+
+</html>

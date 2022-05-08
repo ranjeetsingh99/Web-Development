@@ -1,0 +1,64 @@
+h1 {
+    font-size: 40px;
+    ;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+body {
+    background-color: #ffffff;
+    color: purple;
+    font-family: verdana;
+    font-size: small;
+    border:black solid 1px;
+    padding:5px;
+    margin:2px;
+}
+
+p a {
+    color: purple;
+    text-decoration: none;
+}
+
+li a {
+    color: purple;
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+#about {
+    color: white;
+    background-color: red;
+}
+
+#about:hover {
+    background-color: #ffffff;
+    color: red;
+}
+
+address.upper:hover {
+    border-width: 0px;
+    border-style: solid;
+    margin-right: auto;
+    padding:200;
+    background-color: black;
+    color: #ffffff;
+}
+
+.upcomingOuter{
+    text-align: center;
+    color:#ffffff;
+    border:2px solid black;
+    background-color: gray;
+}
+
+.upcominginner{
+    text-align: justify;
+    background-color: yellow;
+    color: purple;
+    padding:10px;
+    margin:auto;
+    font-size: small;
+    border:2px dotted black;
+}
