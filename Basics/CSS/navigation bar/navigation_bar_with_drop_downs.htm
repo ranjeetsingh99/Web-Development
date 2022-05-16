@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down Menu</title>
+    <style>
+        #navbar {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            height: 30px;
+            width: 90%;
+        }
+
+        #navbar ul {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            list-style-type: none;
+            overflow: visible;
+            background-color: #eeeeee;
+        }
+
+        #navbar ul>li {
+            display: block;
+            float: left;
+            height: auto;
+            width: 120px;
+        }
+
+        #navbar li>a {
+            display: block;
+            padding: 0 0 0 10px;
+            height: 100%;
+            width: 109px;
+            border-right: 1px black solid;
+            font-family: sans-serif;
+            line-height: 30px;
+            font-size: 17px;
+            text-decoration: none;
+            background-color: #eeeeee;
+            color: #5d5636;
+        }
+
+        #navbar ul ul {
+            margin-top: 2px;
+            display: none;
+            position: static;
+            height: auto;
+            width: 160px;
+            border: 1px #666666 solid;
+            background-color: #dddddd;
+        }
+
+        #navbar ul ul li {
+            position: relative;
+            float: none;
+            display: block;
+            height: 28px;
+            width: 100%;
+            border: none;
+        }
+
+        #navbar ul ul li>a {
+            height: 100%;
+            width: 96%;
+            padding: 0 0 0 4%;
+            line-height: 28px;
+            background-color: transparent;
+            border: none;
+            color: #000000;
+            font-size: 12px;
+            font-style: normal;
+        }
+
+        #navbar li:hover >a{
+            color: #220000;
+            background-color: #eeeabe;
+        }
+
+        #navbar li:hover >ul{
+            display: block;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>Navigation Bar with Drop Down Menu</h1>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a>
+            <ul>
+                <li><a href="#">Something Awesome</a></li>
+                <li><a href="#">Another Awesome Thing</a></li>
+                <li><a href="#">Best Product</a></li>
+                <li><a href="#">A Cheap Thing</a></li>
+            </ul>
+            </li>
+            <li><a href="#">About</a>
+            <ul>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Team</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Contacts</a>
+                <ul>
+                    <li><a>hello</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>
