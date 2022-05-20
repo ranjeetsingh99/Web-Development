@@ -11,7 +11,7 @@
             margin-bottom: 5px;
         }
 
-       label {
+        label {
             display: block;
             float: none;
             width: 150px;
@@ -19,12 +19,13 @@
             font-weight: bold;
             margin-right: 10px;
         }
-        input.submit{
-            margin-left:160px;
+
+        input.submit {
+            margin-left: 160px;
         }
-        label.required{
-            color: blue
-            ;
+
+        label.required {
+            color: blue;
         }
     </style>
 </head>
@@ -47,10 +48,66 @@
         <p>Please Enter your username <form><input> and password<input></form>to log in.</p>
 
         <label class="required" >username <input type="text" name="username" ></label> -->
-        <label for="control4">Who is your favorite NFL Quarterback</label><input type="text" name=""favqb" id="control4">
+    <label for="control4">Who is your favorite NFL Quarterback</label><input type="text" name="" favqb" id="control4">
+
+    <label>Telephone:
+        <input type="tel" id="phone" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <input type="number" id="num" min="10" max="100" step="1">
+        <input type="number" id="num" min="0" max="1" step="0.1" placeholder="0.5">
+        <br>
+
+        How much do you l ike our product?<br>
+
+        Not at all <input type="range" name="likes" id="likes" min="0" max="5" step=".01" value="4.3"> More than
+        anything.
+        <br>
+        When can you return the book?<br>
+        <input type="datetime-local" id="returndate">
+        <label>What is your favorite color?
+            <input type="color" id="favoritecolor">
+        </label>
+        <label>
+            Search:
+            <input type="search" id="s">
+            <input type="password" id="userpasswod" size="8" maxlength="8">
+            ""
+            <input type="submit" name="sumbit " id="submit " value="send form Data">
+        </label>
+    </label>
+
+    <input type="reset" value="Clear Form">
+    <br>
+    <label>
+
+        <input type="checkbox" id="spam" checked>
+        Check to receitve SPAM email
+    </label>
+    <br>
+
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <br>
+    <label><input type="checkbox" name="symptoms" value="fever">Fever</label>
+    <p>Select a color:</p>
+    <label style="display: block;"><input type="radio" name="color" value="red">Red</label>
+    <label style="display: block;"><input type="radio" name="color" value="blue">Blue</label>
+    <label style="display: block;"><input type="radio" name="color" value="green">Green</label>
+    <br>
+    <input type="button" id="verify" value="verify" onclick="verifydata()">
+    <label>Please select a file for upload <input type="file" name="fileupload"></label>
+    <br>
 
     </form>
-    
+
+    <form action="/upload" enctype="mutipart/form-data" method="post">
+        <input style="display: block" type="file" id="new_file"> 
+        <input type="submit">
+        
+    </form>
+
+
 </body>
 
 </html>

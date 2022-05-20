@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progess bar</title>
+    <style>
+        progress::-webkit-progress-bar{
+            
+            background: #dfaf00;
+            border-radius: 100px;
+        }
+        progress{
+            
+            background: #dfaf00;
+            border-radius: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <p>Progess task 1:
+        <progress id="prog1" value="2" max="100">2%</progress>
+    </p>
+    <p>Progess task 2:
+        <progress id="prog2" value="50" max="100">50%</progress>
+    </p>
+    <p>Progess task 3:
+        <progress id="prog3" value="90" max="100">90%</progress>
+    </p>
+
+</body>
+</html>
