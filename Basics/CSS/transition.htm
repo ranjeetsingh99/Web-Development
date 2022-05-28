@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        #box{
+            display:flex; height: 220px;
+            width: 220px;
+            margin:20px;
+            background-color: red;
+            justify-content: center;
+            align-items: center;
+            transition: all .1s linear 0s;
+            
+        }
+
+
+        #square {
+            z-index: 3;
+        }
+
+        #box:hover {
+            /*   background-color: white;*/
+            /* border-radius: 105px;*/
+            margin:15px;
+            width:230px;
+            height: 230px;
+        }
+
+        #circle{
+            z-index: 6;
+        }
+
+        #square {
+            position: absolute;
+            border:  solid black 2px;
+            padding:  10px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1>This is CSS Transition Page</h1>
+    <div class="container">
+        <div id="box">
+            <p id="square">This is a Red Square.</p>
+            <p id="circle">This is a White Circle.</p>
+
+        </div>
+    </div>
+</body>
+
+</html>

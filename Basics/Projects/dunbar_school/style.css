@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: silver;
+}
+
+header {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    color: white;
+    background-color: #055;
+    position: relative;
+    padding: 1.25em 0em 1.25em 0em;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+#sitenav ol {
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+#sitenav li {
+    display: inline;
+    padding-left: 1em;
+    margin-left: 1em;
+    border-left: 1px solid black;
+}
+
+#sitenav li:firstchild {
+    padding-left: 0;
+    border: none;
+    margin-left: 0;
+}
+
+#sitenav li a {
+    color: white;
+}
+
+#main {
+    padding: 0 12em 2em 2em;
+    position: relative;
+    background-color: gray;
+
+}
+
+#content {
+    background-color: white;
+}
+
+#sidebar {
+    position: absolute;
+    width: 10em;
+    right: 1em;
+    top: 1em;
+}
+
+#sidebar h3 {
+    color: white;
+    background-color: black;
+}
+
+#sidebar ol {
+    margin: 0 0 1em 0;
+    background-color: white;
+    border: 2px solid black;
+}
+
+footer {
+    background-color: #fff;
+}
+
+img {
+    position: relative;
+    width: 20em;
+}
+
+/* ----------------------------------- */
+body {
+    font-family: ubuntu;
+}
+
+a:link {
+    color: #055;
+}
+
+a:visited {
+    color: #404;
+}
+
+header h1,
+header h2 {
+    margin: 0;
+}
+
+header h1 {
+    color: #ffff00;
+    font-size: 250%;
+}
+
+header h2 {
+    font-weight: normal;
+    font-style: italic;
+}
+
+#sitenav {
+    color: white;
+    background-color: #404;
+    position: fixed;
+    top: 0;
+    right: 0;
+    border-bottom: 1px solid #dddd00;
+    width: 100%;
+    background-color: #055;
+}
+
+#sitenav ol {
+    font-size: 90%;
+    text-align: center;
+}
+
+#sitenav li {
+    margin-left: 1em;
+    border-left: 1px solid #000;
+    text-decoration: none;
+}
+
+#sitenav li a:link,
+#sitenav li a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#sitenav li a:hover {
+    color: #dddddd;
+}
+
+#main {
+    background-color: #005;
+}
+
+#content {
+    background-color: white;
+    padding: 1em 5em;
+    height: 1000px;
+}
+
+#content h3 {
+    margin-top: 0;
+}
+
+#content p {
+    font-size: 90%;
+    line-height: 1.2;
+}
+
+#sidebar h3 {
+    font-size: 100%;
+    color: white;
+    margin: 0;
+    font-weight: normal;
+    padding: 0.125em 0.25em;
+    background-color: #404;
+}
+
+#sidebar ol {
+    background-color: white;
+    border: 2px solid #404;
+    border-top: 0;
+    margin: 0 0 1em 0;
+}
+
+#sidebar li {
+    font-size: 85%;
+    display: block;
+    padding: 0.125 0;
+}
+
+#sidebar li a:link,
+#sidebar li a:visited {
+    text-decoration: none;
+    color: #055;
+}
+
+#sidebar li a:hover {
+    color: #404;
+}
+
+footer {
+    background-color: #404;
+    color: white;
+    padding: 0.5em 5em;
+}
+
+footer p {
+    margin: 0em;
+    font-size: 85%;
+}
+
+footer p a:link,
+footer p a:visited {
+    color: #dddd00;
+}
