@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border:1px solid black; */
+}
+
+/* navigation bar  */
+header {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top:0px;
+    background-color: white;
+    z-index: 1;
+    height: 4em;
+}
+
+header #logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6em;
+    height: 6em;
+    margin-left: 1em;
+    /* border-radius: 50%; */
+}
+
+header #logo a img {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+}
+
+
+
+header #navbar {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+header #navbar ul {
+    display: flex;
+
+}
+
+header #navbar ul li {
+    list-style-type: none;
+    margin-right: 3em;
+}
+
+header #navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    font-family: 'Ubuntu mono';
+    border-radius: 15px;
+    transition: .1s;
+    padding:10px;
+}
+header #navbar ul li a:hover {
+    background-color: black;
+    color:white;
+}
+/* home */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25em;
+}
+
+#home p{
+    text-align: center;
+    font-family:'open sans',sans-serif;
+}
+
+/* gallery */
+
+#gallery{
+    display:flex;
+    justify-content: space-around;
+    height: 40em;
+}
+
+#gallery .img1 , #gallery .img3{
+    position:relative;
+    margin-top: auto;
+    margin-bottom: 0px;
+}
+#gallery .img2{
+    position:relative;
+    margin-top: auto;
+    margin-bottom: 6em;
+}
+
+/* about */
+
+#about{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 30em;
+}
+
+#about .about_internal{
+    width: 50%;;
+}
+#about .left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#about .left p{
+    text-transform: uppercase;
+    font-family: 'open sans',sans-serif;
+    font-weight: bold;
+    position: relative;
+    left: -12em;
+}
+
+#about .left h1{
+    text-align: center;
+
+}
+#about .right p{
+    text-align: center;
+    padding-left: 8em;
+    padding-right:6em;
+    font-family: 'open sans',sans-serif;
+}
+/* credo */
+#credo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 30em;
+}
+
+#credo .credo_half{
+    width: 50%;;
+}
+
+#credo .text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+
+#credo .text .top{
+    text-transform: uppercase;
+    font-family: 'open sans',sans-serif;
+    font-weight: bold;
+    position: relative;
+    left:-12em;
+}
+
+/* insta */
+#insta{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 35em;
+    flex-direction: column;
+}
+
+
+
+#insta img{
+    margin:6px;
+} 
+
+
+/* question */
+#question{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30em;
+}
+
+#question .half{
+    width:50%;
+}
+#question .text{
+    text-align: center;
+}
+#question form{
+    display:flex;
+    flex-direction: column;
+    
+}
+#question form>*{
+    padding:1em 0 0 0;
+}
+#question form button{
+    padding: 0.8em 3em;
+    width:30%;
+    display: inline;
+}
+#question form label{
+    text-align: left;
+    font-size: 1.2em;
+    font-family: 'open sans',sans-serif;
+}
+
+#question form label input, #question form label textarea{
+    display: block;
+    border: none;
+    background-color: rgb(243, 243, 243);
+}
+
+#question form label input{
+    width: 70%;
+    line-height: 2em;
+}
+#question form label textarea{
+    width: 70%;
+
+}
+
+
+#last_img img{
+    width: 100%;
+    height:25em;
+    object-fit: cover;
+}
+
+/* footer */
+
+footer{
+    height: 25em;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .info{
+    
+    display:flex;
+    justify-content: space-around;
+    font-family: 'open sans',sans-serif;
+}
+
+footer #socialm{
+    display: flex;
+    justify-content: space-around;
+    width: 10%;
+    padding-top: 1em;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer input{
+    display: block;
+    line-height: 2em;
+    border: none;
+    background-color: rgb(243, 243, 243);
+}
+footer img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+/* utilities */
+
+
+.h-primary {
+    font-size: 3.2em;
+    font-family: 'BioRhyme', serif;
+}
+.h-secondary {
+    font-size: 2em;
+    font-family: 'BioRhyme', serif;
+}
+
+.btn{
+    background-color: rgb(255, 11, 11);
+    border: none;
+    border-radius: 25px;
+    padding: 0.8em 3em;
+    color: white;
+    font-size: 0.9em;
+    position: relative;
+    top: 2em;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: bold;
+    cursor:pointer;
+    transform: .2s;
+}
+
+.btn:hover{
+    background-color: rgb(255, 128, 128);
+    cursor: pointer;
+}

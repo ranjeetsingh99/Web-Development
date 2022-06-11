@@ -1,0 +1,38 @@
+main{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 0 3em  0;
+}
+
+div.mesz{
+    width: 20%;
+}
+
+form{
+    
+    width: 50%;
+}
+form>p.para{
+    font-size: 1.5em;
+}
+
+form>div{
+    margin-bottom: 1em;
+}
+form>div>input[type=text], form>div>textarea{
+    width: 90%;
+    font-size: 1.2em;
+    font-family: 'lato',sans-serif;
+    background-color: #eee;
+    resize: none;
+    padding:7px;
+}
+form>div>input ,form>div>textarea {
+    border:none;
+}
+
+body>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

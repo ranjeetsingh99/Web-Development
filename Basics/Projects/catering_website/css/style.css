@@ -1,0 +1,160 @@
+
+
+/* home................................. */
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30em;
+}
+
+#home a {
+
+    top: 4em;
+
+}
+
+#home_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45em;
+}
+
+
+
+/* delicious section ....................... */
+
+#delicious {
+    display: flex;
+    align-items: center;
+    height: 28em;
+    background-color: rgb(255, 204, 175);
+}
+
+#delicious .half {
+    width: 50%;
+    margin: 1%;
+}
+
+#delicious .image img {
+    object-fit: scale-down;
+    width: 36em;
+    height: 29em;
+}
+
+#delicious .text h1,
+#delicious .text p {
+    margin-left: 100px;
+    text-align: center;
+}
+
+#delicious .text a {
+    position: relative;
+    left: 50%;
+    top: 2em;
+}
+
+/* food section ................. */
+
+#food {
+    margin: 5em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#food .dishes {
+    display: flex;
+
+}
+
+#food p {
+    margin: 0 8em;
+    text-align: center;
+}
+
+#food .dishes .half {
+    display: flex;
+    flex-direction: column;
+    height: 22em;
+    justify-content: space-around;
+}
+
+#food img {
+    margin-top: 4em;
+
+}
+
+/* services............... */
+
+#service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 218, 137);
+}
+
+#service .half {
+    width: 50%;
+}
+
+#service .image {
+    display: flex;
+}
+
+#service .image img {
+    position: relative;
+    margin-left: auto;
+    margin-right: 1em;
+    object-fit: scale-down;
+    width: 36em;
+    height: 29em;
+}
+
+#service .text {
+    margin: 6%;
+}
+
+#service .text h1 {
+    text-align: left;
+}
+
+#service .text a {
+    top: 3em;
+}
+
+
+/* review,...................... */
+
+#review {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 3em; */
+    height: 40em;
+    justify-content: space-around;
+
+}
+
+#review>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#review>div .half {
+    width: 50%;
+}
+
+#review>div .image {
+    display: flex;
+    justify-content: center;
+}
+
+#review>div .text {
+    padding: 0em 2em 0em 0em;
+}

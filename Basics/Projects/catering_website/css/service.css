@@ -1,0 +1,35 @@
+main>h1{
+    padding:2em  0;
+}
+
+main>.text{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 7em;
+}
+main>.text .half{
+    width: 40%;
+}
+
+div.half>div>h2{
+    text-align: left;
+}
+
+div.right{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div.half ul li{
+    list-style-type: none;
+}
+
+div.image{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 6em;
+}
+div.image img{
+    width: 38em;
+    height:38em;
+}

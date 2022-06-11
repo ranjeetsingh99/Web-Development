@@ -1,0 +1,117 @@
+header{
+    display:flex;
+    align-items: center;
+    position: sticky;
+    z-index: 4;
+    top:0;
+    background-color: #fff;
+}
+
+header #logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15em;
+    height: 5em;
+}
+
+header #logo a img{
+    width: 5em;
+    height: 5em;
+}
+
+header nav{
+    margin-left: auto;
+    margin-right: 1em;
+}
+
+header nav ul{
+    display: flex;
+
+}
+
+header nav ul li{
+    list-style-type: none;
+    margin-right: 5em;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:black;
+    border-radius: 20px;
+    padding:10px;
+    transition: .1s;
+    font-family: 'open sans',sans-serif;
+}
+header nav ul li a:hover,
+header nav ul li .current{
+    background-color: #eee;
+}
+
+.line{
+    border-top: 1px white solid; 
+    height: 1px;
+    z-index: 2;
+    position:sticky;
+    top:5em;
+    transition: 2s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.blocker{
+    height: 2em;
+    z-index: 3;
+    position: relative;
+    top:-.5em;
+    background-color: #fff;
+    
+}
+
+
+/* footer  */
+
+
+#last_mesz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25em;
+    background-color: rgb(255, 195, 106);
+    padding: 0 1em
+}
+
+#last_mesz a {
+    position: relative;
+    top:2em;
+}
+
+footer{
+    display: flex;
+    height: 20em;
+    align-items: center;
+}
+
+footer .half{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left; 
+}
+footer .half p, footer .half h2{
+    text-align: left;
+    width: 50%;
+}
+
+footer .contact{
+    position:relative;
+    left: 25%;
+    width: 24%;
+}
+
+footer .about div {
+    position:relative;
+    left:25%;
+    
+} 
