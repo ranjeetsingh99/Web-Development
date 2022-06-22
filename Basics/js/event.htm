@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+            padding:10px 34px;
+            background-color: #f00;
+            border:2px black solid;
+            color:white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>this is my heading</h1>
+        <p id="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sint repellat dicta doloribus necessitatibus
+            vero, dolorum ratione provident. Praesentium repellat, deleniti quis a temporibus molestias sed voluptas
+            eaque magni optio.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis debitis accusamus asperiores commodi
+            mollitia, optio dolores officiis tenetur iusto laborum reiciendis! Est magni delectus, sequi totam
+            consequatur iste deserunt sapiente.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dignissimos suscipit dolorem accusamus nesciunt
+            doloribus, dolore corporis aperiam quo cum assumenda laboriosam aliquid reiciendis facere fugiat deleniti
+            qui labore vero?
+        </p>
+        <button id="btn" onclick="toggleHide()">show/hide</button>
+    </div>
+    <script>
+        function toggleHide(){
+            let btn= document.getElementById('btn');
+            let para = document.getElementById('para');
+            if(para.style.display!='none'){
+
+                para.style.display='none';
+                btn.style.padding='10px 34px';
+            }
+            else{
+
+                para.style.display='block';
+                
+                btn.style.padding='10px 100px';
+            }
+        }
+    </script>
+</body>
+
+</html>

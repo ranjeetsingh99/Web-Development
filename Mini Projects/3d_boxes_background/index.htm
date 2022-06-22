@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d boxes background</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #aaa;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+            padding-top: 5vh;
+            overflow: hidden;
+
+        }
+
+        .magic {
+            background-color: #f9ca24;
+            color: #fff;
+            border: 0;
+            border-radius: 8px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            padding: 12px 20px;
+            cursor: pointer;
+            position: fixed;
+            top: 24vh;
+            letter-spacing: 1px;
+            box-shadow: 1px 5px rgba(249, 202, 36, 0.5);
+            z-index: 100;
+
+        }
+
+        .magic:focus {
+            outline: none;
+        }
+
+        .magic:active {
+            box-shadow: none;
+            transform: translateY(5px);
+        }
+
+
+        .boxes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            height: 36vh;
+            width: 36vh;
+            position: relative;
+            transition: 1s ease;
+        }
+
+        .boxes.big {
+            width: 44vh;
+            height: 44vh;
+        }
+
+        .boxes.big .box,
+        .boxes.big .boxStill {
+            transform: rotateZ(360deg);
+        }
+        .hid{
+            display:none;
+        }
+        .hid1{
+            background-image: url('https://i.pinimg.com/originals/01/9e/d9/019ed93de6e2fadc94e0fb4b82df698a.jpg');
+
+        }
+        .hid2{
+            background-image: url('https://media.giphy.com/media/EZqwsBSPlvSda/giphy.gif');
+
+        }
+        .box {
+            background-image: url('https://i.pinimg.com/originals/01/9e/d9/019ed93de6e2fadc94e0fb4b82df698a.jpg');
+            background-repeat: no-repeat;
+            background-size: 36vh 36vh;
+            position: relative;
+            height: 9vh;
+            width: 9vh;
+            transition: .5s ease;
+        }
+        
+        .boxStill {
+            
+            background-image: url('https://media.giphy.com/media/EZqwsBSPlvSda/giphy.gif');
+        }
+        
+        .box::after,
+        .boxStill::after {
+            content: '';
+            background-color: #f6e58d;
+            position: absolute;
+            top: .45em;
+            right: -1em;
+            height: 100%;
+            width: 1em;
+            transform: skewY(45deg);
+        }
+
+        .box::before,
+        .boxStill::before {
+            content: '';
+            background-color: #f9ca24;
+            position: absolute;
+            left: .45em;
+            bottom: -1em;
+            height: 1em;
+            width: 100%;
+            transform: skewX(45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hid hid1"></div>
+    <div class="hid hid2"></div>
+    <button id="btn" class="magic">Magic 🎩</button>
+    <div id="boxes" class="boxes big"></div>
+
+    <script>
+        const boxesContainer = document.getElementById('boxes');
+        const btn = document.getElementById('btn')
+
+        function createBoxes() {
+            
+            for (let i = 0; i < 4; i++) {
+                for (let j = 0; j < 4; j++) {
+                    const box = document.createElement('div')
+                    box.classList.add('box')
+                    box.style.backgroundPosition = `${-j * 9}vh ${-i * 9}vh`
+                    boxesContainer.appendChild(box)
+                    
+                }
+            }
+        }
+        createBoxes();
+        const boxS=document.getElementsByClassName('box');
+        btn.addEventListener('click', () => boxesContainer.classList.toggle('big'));
+        btn.addEventListener('click', function(){
+                                            
+                                            for(let i=0;i<boxS.length;i++){
+                                                boxS[i].classList.toggle('boxStill');
+                                            };
+                                            });
+        </script>
+</body>
+
+</html>
